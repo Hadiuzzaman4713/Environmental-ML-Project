@@ -1,0 +1,60 @@
+{
+  "Linear Regression": {},
+  "Elastic Net": {
+    "alpha": 0.0001,
+    "l1_ratio": 1.0
+  },
+  "KNN": {
+    "metric": "manhattan",
+    "n_neighbors": 8,
+    "weights": "distance"
+  },
+  "SVR (RBF)": {
+    "C": 300000.0,
+    "epsilon": 10,
+    "gamma": 0.0003
+  },
+  "Decision Tree": {
+    "max_depth": 8,
+    "min_samples_leaf": 15
+  },
+  "Random Forest": {
+    "max_depth": 16,
+    "max_features": 0.7,
+    "min_samples_leaf": 2
+  },
+  "Gradient Boosting": {
+    "subsample": 0.3,
+    "n_estimators": 3000,
+    "min_samples_leaf": 3,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "learning_rate": 0.003
+  },
+  "XGBoost": {
+    "subsample": 0.2,
+    "reg_lambda": 3,
+    "n_estimators": 800,
+    "min_child_weight": 1,
+    "max_depth": 2,
+    "learning_rate": 0.02,
+    "colsample_bytree": 0.8
+  },
+  "LightGBM": {
+    "subsample": 0.2,
+    "reg_lambda": 0,
+    "num_leaves": 7,
+    "n_estimators": 300,
+    "min_child_samples": 2,
+    "learning_rate": 0.02,
+    "colsample_bytree": 1.0
+  },
+  "Stacking": {
+    "meta-learner weights": {
+      "rf": 0.083,
+      "xgb": 0.0,
+      "lgbm": 0.443,
+      "svr": 0.527
+    }
+  }
+}
